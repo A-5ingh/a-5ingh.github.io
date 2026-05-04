@@ -12,7 +12,7 @@ You fill in one YAML config file with your details. You get a live portfolio sit
 
 It’s free to host permanently. Your data lives in a repo you own. No subscription, no platform lock-in — though worth noting: the data is structured for this tool’s YAML schema, so switching tools later means reformatting it.
 
-[![How to use GitVitae](https://i.ytimg.com/an_webp/iUoFmcTKmW8/mqdefault_6s.webp?du=3000&sqp=CNyz4M8G&rs=AOn4CLAK5PZ6FZw1o70pnwngOaUXLuUZKg)](https://www.youtube.com/watch?v=iUoFmcTKmW8 "How to use GitVitae")
+[![How to use GitVitae](https://i.ytimg.com/an_webp/iUoFmcTKmW8/mqdefault_6s.webp?du=3000&sqp=CLb74s8G&rs=AOn4CLD4_JY3cnXFReT9PyXbhcF_r-RVLg)](https://www.youtube.com/watch?v=iUoFmcTKmW8 "How to use GitVitae")
 
 **One honest tradeoff**: your URL will be `yourgitusername.github.io` by default. That's not a clean professional URL. A custom domain fixes it and costs around $12/year through any registrar — point it at GitHub Pages in your repo settings and you're done.
 
