@@ -12,18 +12,18 @@
 # ║                                                                      ║
 # ║  Change it to "portfolio" once you have filled in your details.     ║
 # ╚══════════════════════════════════════════════════════════════════════╝
-siteMode: "landing"   # ← CHANGE THIS to "portfolio"
-siteUrl:  "https://yourusername.github.io"  # ← Your GitHub Pages URL (used for RSS & canonical links)
-showPoweredBy: false  # Set to true to show a small "Made with GitVitae" badge in your footer (helps others discover GitVitae)
+siteMode: "portfolio"   # ← CHANGE THIS to "portfolio"
+siteUrl:  "https://a-5ingh.github.io"  # ← Your GitHub Pages URL (used for RSS & canonical links)
+showPoweredBy: true  # Set to true to show a small "Made with GitVitae" badge in your footer (helps others discover GitVitae)
 
 # ── Identity ───────────────────────────────────────────── (required) ──
-name: "Alex Rivera"
-title: "Full-Stack Engineer"
+name: "Amarbir Singh"
+title: "Senior Technologist @ Infosys"
 tagline: "I build thoughtful software that scales."
-email: "alex@example.com"
+email: "amarxsingh@proton.me"
 phone: ""                    # Optional — e.g. "+1 (555) 000-1234". Shown in contact section and resume.
-location: "San Francisco, CA"
-avatarUrl: "https://api.dicebear.com/9.x/fun-emoji/svg?seed=Alex&mouth[]=wideSmile&radius=12"  # Demo avatar — replace with your own photo URL (see instructions below)
+location: "Greater Toronto Area, Ontario, 🇨🇦"
+avatarUrl: "https://avatars.githubusercontent.com/u/32884734?s=400&u=f26182dfac28e00899be79e9c7e6703900a141d1&v=4"  # Demo avatar — replace with your own photo URL (see instructions below)
 # How to add a profile photo (free, no extra account needed):
 #   1. Go to your GitHub repo → click "Add file" → "Upload files"
 #   2. Upload your photo (e.g. avatar.jpg) into a folder called "public/"
@@ -50,15 +50,15 @@ openToWork: true         # Shows "Open to Opportunities" banner when true
 
 # ── Theme ──────────────────────────────────────────────────────────────
 defaultTheme: "system"   # Options: light | dark | system
-colorPreset: "indigo"    # Options: indigo | emerald | rose | amber | ocean | slate | custom
-# primaryColor: "#6366f1" # Optional — pick any colour you like and paste its hex code here.
+colorPreset: "ocean"    # Options: indigo | emerald | rose | amber | ocean | slate | custom
+primaryColor: "#838E83" # Optional — pick any colour you like and paste its hex code here.
                            # Overrides colorPreset above. To find a hex code:
                            #   → Google "colour picker", pick a colour, copy the 6-digit code (e.g. #e11d48)
                            #   → or grab one from coolors.co / your favourite site's colour
 
 resumeTheme:
-  twoColumn: "indigo"    # Accent color for the two-column resume layout
-  classic: "emerald"     # Accent color for the classic resume layout
+  twoColumn: "slate"    # Accent color for the two-column resume layout
+  classic: "slate"     # Accent color for the classic resume layout
 
 contactFormEndpoint: ""  # Optional — paste a Formspree URL (https://formspree.io/f/xxxx)
                            # or any POST endpoint that accepts {name, email, message}.
@@ -70,30 +70,29 @@ sections:
   - { id: about,          show: true  }
   - { id: stats,          show: false }  # Stats already appear as cards in the About section above — enable this only if you want a dedicated full-width stats section
   - { id: skills,         show: true  }
-  - { id: languages,      show: true  }
+  - { id: languages,      show: false }
   - { id: experience,     show: true  }
   - { id: projects,       show: true  }
   - { id: education,      show: true  }
   - { id: certifications, show: true  }
-  - { id: publications,   show: false }
-  - { id: testimonials,   show: true  }
+  - { id: publications,   show: true  }
+  - { id: testimonials,   show: false }
   - { id: contact,        show: true  }
 
 # ── Social links ───────────────────────────── (leave blank to hide) ───
 social:
-  github:   "https://github.com/yourusername"
-  linkedin: "https://linkedin.com/in/yourusername"
+  github:   "https://github.com/a-5ingh"
+  linkedin: "https://linkedin.com/in/singhamarbir"
   twitter:  ""
-  website:  ""
+  website:  "https://a-5ingh.github.io"
 
 # ── About ──────────────────────────────────────────────────────────────
 # Use | for multi-line text. Indent each line by 2 spaces.
 about: |
-  I'm a full-stack engineer with 5+ years of experience building products
-  that people love. I specialize in React, Node.js, and distributed systems.
-  When I'm not coding, I'm hiking trails or experimenting with new coffee
-  brewing methods.
-
+  15 years architecting cloud platforms, developer toolchains, and data 
+  pipelines that teams depend on without thinking about them. Currently 
+  at Infosys, where I designed the iLEAD internal developer platform and 
+  lead DevSecOps strategy. CNCF open-source maintainer for Kyverno and jHipster.
 
 # ── Stats ──────────────────────────────────────────────────────────────
 # Customise each label and value freely — change "Projects Shipped" to
@@ -101,10 +100,10 @@ about: |
 # Optional fields: prefix (e.g. "$") and suffix (e.g. "+" or "k").
 # Remove all entries or set show: false above to hide this section.
 stats:
-  - { label: "Years Experience", value: 5,    suffix: "+" }
-  - { label: "Projects Shipped", value: 20,   suffix: "+" }
-  - { label: "Happy Clients",    value: 50,   suffix: "+" }
-  - { label: "Cups of Coffee",   value: 1200, suffix: ""  }
+  - { label: "Years Experience", value: 15,    suffix: "+" }
+  - { label: "Projects Shipped", value: 50,   suffix: "+" }
+  - { label: "Happy Clients",    value: 7,   suffix: "+" }
+  - { label: "Cups of Coffee",   value: ♾️, suffix: ""  }
 
 # Examples of other combinations you can use:
 #   - { label: "Active Users",    value: 10000, suffix: "+" }
@@ -114,136 +113,117 @@ stats:
 # ── Languages ──────────────────────────────────────────────────────────
 # level options: Native | Fluent | Conversational | Basic
 languages:
-  - { name: "English",  level: "Native"        }
-  - { name: "Spanish",  level: "Conversational" }
-  - { name: "Mandarin", level: "Basic"          }
+  - { name: "Punjabi",  level: "Native" }
+  - { name: "English",  level: "Fluent" }
+  - { name: "Hindi",    level: "Fluent" }
 
 # ── Skills ─────────────────────────────────────────────────────────────
 skills:
   - category: "Frontend"
     items: [React, TypeScript, Next.js, Tailwind CSS, Framer Motion]
   - category: "Backend"
-    items: [Node.js, Express, PostgreSQL, Redis, GraphQL]
+    items: [.NetCore, Node.js, Express, PostgreSQL, MSSQL, Redis]
   - category: "DevOps"
-    items: [Docker, AWS, CI/CD, Kubernetes, Terraform]
+    items: [Azure DevOps, Docker, CI/CD, Kubernetes, Terraform]
   - category: "Tools"
-    items: [Git, Figma, Jest, Storybook, Datadog]
+    items: [Git, Figma, Jest, Storybook]
+  - category: "Cloud"
+    items: [Azure, AWS, GCP]
 
 # ── Experience ─────────────────────────────────────────────────────────
 experience:
-  - company: "Acme Corp"
-    role: "Senior Full-Stack Engineer"
-    period: "2022 – Present"
+  - company: "Infosys Limited, India & Canada"
+    role: "Senior Technologist - Cloud & DevOps Architect"
+    period: "2018 – Present"
     description: |
-      Led migration of monolithic Rails app to microservices.
-      Reduced p99 latency by 60%. Mentored a team of 4 engineers.
+      Built Azure Landing Zone foundation aligned to CAF; subscription vending pipeline automated new environment provisioning in under 15 minutes.
+      <br>Led shift-left DevSecOps programme across 60+ GitHub Actions pipelines; reduced critical CVE exposure by 70% in six months.
+      <br>Evaluated GitHub Copilot Enterprise for 500+ engineers; built PR-review automation agent using Microsoft Agent Framework and Azure AI Foundry.
     highlights:
-      - Microservices migration
-      - 60% latency reduction
+      - Cloud migration
+      - 60% deployment time reduction
       - Team leadership
 
-  - company: "Startup XYZ"
-    role: "Software Engineer"
-    period: "2020 – 2022"
+  - company: "Infosys Limited, India & US"
+    role: "Full Stack & SDET"
+    period: "2014 – 2018"
     description: |
-      Built real-time collaboration features for a SaaS platform serving
-      50k users. Owned the entire frontend from scratch.
+      Led full-stack delivery of three client platforms (Java / Spring Boot + React); contract testing with Pact reduced integration regression rate 45%.
+      <br>SDET automation framework covering 1,200+ test cases; CI integration cut regression cycle from 4 hours to 40 minutes.
+      <br>Contributed to jHipster OSS; authored Kubernetes deployment blueprint adopted as team standard for cloud-native services.
     highlights:
       - Real-time collaboration
-      - 50k users
-      - Frontend ownership
+      - Fullstack ownership
 
-  - company: "Freelance"
-    role: "Web Developer"
-    period: "2018 – 2020"
+  - company: "Infosys Limited, India"
+    role: "QA & Automation"
+    period: "2011 – 2014"
     description: |
-      Delivered 20+ web projects for small businesses and agencies across
-      e-commerce, marketing, and internal tools.
+      <br>Backend services and REST APIs for insurance and banking clients; 99.9% uptime SLA on Java EE stacks.
+      <br>Established QA processes from scratch: test planning, defect triage, regression automation — production defect escape rate reduced 35%.
     highlights:
       - 20+ projects
-      - E-commerce
       - Internal tools
 
 # ── Projects ───────────────────────────────────────────────────────────
 # Set featured: true to show in the Featured section (max 3 recommended)
 projects:
-  - name: "OpenDesk"
-    description: "An open-source project management tool built with React and Go. 2.3k GitHub stars. Real-time updates via WebSockets."
-    tags: [React, Go, WebSockets, PostgreSQL]
-    liveUrl: "https://opendesk.example.com"
-    repoUrl: "https://github.com/yourusername/opendesk"
+  - name: "GitVitae"
+    description: "A free, open-source portfolio template for developers and job seekers. Edit one YAML file, push to GitHub, get a live portfolio — no account needed, no hosting fees, no framework knowledge required."
+    tags: [React, Vite, TypeScript, TailwindCSS]
+    liveUrl: "https://git-vitae.github.io"
+    repoUrl: "https://github.com/git-vitae/git-vitae.github.io"
     featured: true
-
-  - name: "CodeLens"
-    description: "VS Code extension that uses AI to generate inline documentation. 10k+ installs from the marketplace."
-    tags: [TypeScript, OpenAI, "VS Code API"]
-    liveUrl: ""
-    repoUrl: "https://github.com/yourusername/codelens"
-    featured: true
-
-  - name: "PriceWatch"
-    description: "Browser extension that tracks price history on e-commerce sites and alerts users to drops."
-    tags: [JavaScript, "Chrome API", Node.js]
-    liveUrl: "https://pricewatch.example.com"
-    repoUrl: "https://github.com/yourusername/pricewatch"
-    featured: false
-
-  - name: "Logbook"
-    description: "A minimalist journaling app with end-to-end encryption. Built in a weekend. 500+ users."
-    tags: ["React Native", SQLite, Crypto]
-    liveUrl: ""
-    repoUrl: "https://github.com/yourusername/logbook"
-    featured: false
 
 # ── Education ──────────────────────────────────────────────────────────
 education:
-  - institution: "University of California, Berkeley"
-    degree: "B.S. Computer Science"
-    period: "2014 – 2018"
+  - institution: "Punjab Technical University, India"
+    degree: "Bacholers in Computer Science"
+    period: "2006 – 2010"
 
 # ── Certifications ─────────────────────────────────────────────────────
 certifications:
-  - title: "AWS Certified Solutions Architect – Associate"
-    issuer: "Amazon Web Services"
-    date: "2023"
-    credentialUrl: "https://aws.amazon.com/verification"
-    badgeUrl: "https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
-    tags: [Cloud, Architecture, AWS]
+  - title: "GitHub Copilot"
+    issuer: "Microsoft"
+    date: "January 1, 2026"
+    credentialUrl: "https://learn.microsoft.com/en-us/users/amarbirsingh/credentials/b302210c41a876b6"
+    badgeUrl: "https://learn.microsoft.com/media/learn/certification/badges/github-copilot.svg"
+    tags: [AI, Copilot]
 
-  - title: "Professional Scrum Master I"
-    issuer: "Scrum.org"
-    date: "2022"
-    credentialUrl: "https://www.scrum.org/certificates"
-    badgeUrl: "https://images.credly.com/size/340x340/images/a2790314-008a-4c3d-9e11-2a8f48155adc/image.png"
-    tags: [Agile, Scrum, Leadership]
-
-  - title: "Google Professional Data Engineer"
-    issuer: "Google Cloud"
-    date: "2021"
-    credentialUrl: ""
+  - title: "Kyverno Certified Associate"
+    issuer: "The Linux Foundation"
+    date: "December 21, 2025"
+    credentialUrl: "https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/29cf353c-53e9-469d-8a23-7da6d6231e7d-amarbir-singh-c276134a-0d6d-44df-93bc-c811d457d5dd-certificate.pdf"
     badgeUrl: ""
-    tags: [Data, GCP, BigQuery]
+    tags: [Kyverno, Kubernetes, Security]
+
+  - title: "Certified GitOps Associate"
+    issuer: "The Linux Foundation"
+    date: "November 29, 2025"
+    credentialUrl: "https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/29cf353c-53e9-469d-8a23-7da6d6231e7d-amarbir-singh-e1018b52-9d79-4b01-af18-92d738a5e759-certificate.pdf"
+    badgeUrl: ""
+    tags: [GitOps, ArgoCD, Flux]
 
 
 # ── Publications ───────────────────────────────────────────────────────
 # Optional — ideal for researchers, academics, and technical writers.
 # type options: conference | journal | preprint | book-chapter | workshop
 publications:
-  - title: "Scaling Real-Time Collaboration in Distributed Systems"
-    authors: "Rivera A, Chen L, Patel S"
-    venue: "USENIX ATC 2023"
-    year: "2023"
-    url: "https://arxiv.org/abs/example"
-    type: "conference"
-    tags: [distributed-systems, real-time, scalability]
+  - title: "How to accelerate innovation with InnerSource"
+    authors: "Singh A, Pissay R, Bevan K"
+    venue: "IKI"
+    year: "2025"
+    url: "https://www.infosys.com/iki/perspectives/accelerate-innovation-innersource.html"
+    type: "whitepaper"
+    tags: [open-source, inner-source, enterprise]
 
-  - title: "Micro-Frontend Architecture Patterns for Large-Scale SPAs"
-    authors: "Rivera A"
-    venue: "IEEE Software"
-    year: "2022"
-    url: ""
-    type: "journal"
-    tags: [frontend, architecture, micro-frontends]
+  - title: "Integration Fabric - The Future of APIs with Model Context Protocol"
+    authors: "Jain C, Roy D, Singh A"
+    venue: "TechCompass"
+    year: "2026"
+    url: "https://www.infosys.com/iki/techcompass/future-apis-model-context-protocol.html"
+    type: "whitepaper"
+    tags: [mcp, ai-first, enterprise]
 
 # ── Testimonials ───────────────────────────────────────────────────────
 testimonials:
