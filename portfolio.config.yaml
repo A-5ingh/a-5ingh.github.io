@@ -1,16 +1,16 @@
 # ╔══════════════════════════════════════════════════════════════════════╗
-# ║              GitVitae — Portfolio Configuration                       ║
-# ║  This is the only file you need to edit.                            ║
-# ║  Run  pnpm check-config  to catch mistakes before deploying.        ║
+# ║              GitVitae — Portfolio Configuration                      ║
+# ║  This is the only file you need to edit.                             ║
+# ║  Run  pnpm check-config  to catch mistakes before deploying.         ║
 # ╚══════════════════════════════════════════════════════════════════════╝
 
 # ╔══════════════════════════════════════════════════════════════════════╗
-# ║  ⚠️  FIRST THING TO CHANGE                                          ║
+# ║  ** FIRST THING TO CHANGE **                                         ║
 # ║                                                                      ║
 # ║  siteMode: "landing"  → shows the GitVitae intro page (default)      ║
 # ║  siteMode: "portfolio" → shows YOUR portfolio                        ║
 # ║                                                                      ║
-# ║  Change it to "portfolio" once you have filled in your details.     ║
+# ║  Change it to "portfolio" once you have filled in your details.      ║
 # ╚══════════════════════════════════════════════════════════════════════╝
 siteMode: "portfolio"   # ← CHANGE THIS to "portfolio"
 siteUrl:  "https://a-5ingh.github.io"  # ← Your GitHub Pages URL (used for RSS & canonical links)
