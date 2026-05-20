@@ -168,7 +168,10 @@ export function SimpleChat() {
   }
 
   return (
-    <div className="bg-background flex h-[500px] min-h-0 w-full max-w-md flex-col overflow-hidden rounded-2xl border shadow-lg">
+    <div
+      className="bg-background flex h-[500px] min-h-0 w-full max-w-md flex-col overflow-hidden rounded-2xl border shadow-lg overscroll-contain"
+      data-lenis-prevent
+    >
       {/* Header */}
       <div className="bg-muted/50 flex items-center justify-between gap-3 border-b p-4">
         <div className="flex items-center gap-3">
@@ -234,7 +237,11 @@ export function SimpleChat() {
       </div>
 
       {/* Message List */}
-      <ScrollArea className="min-h-0 flex-1 p-4" viewportRef={scrollRef}>
+      <ScrollArea
+        className="min-h-0 flex-1 p-4 overscroll-contain"
+        viewportRef={scrollRef}
+        data-lenis-prevent
+      >
         <div className="space-y-4">
           {messages.map((msg, i) => (
             <div
