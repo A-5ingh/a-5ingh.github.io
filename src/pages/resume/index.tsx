@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { config } from '@/portfolio.config';
-import { applyThemePalette } from '@/lib/themes';
+import { applyThemePalette, hexToPresetPalette } from '@/lib/themes';
 import { ShareModal } from '@/components/ShareModal';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -430,10 +430,13 @@ export function ResumePage({ theme, onToggleTheme }: ResumePageProps) {
         : config.resumeTheme.classic;
     applyThemePalette(preset, theme === 'dark', config.customColors);
     return () => {
+      const palette = config.primaryColor
+        ? hexToPresetPalette(config.primaryColor)
+        : config.customColors;
       applyThemePalette(
-        config.colorPreset,
+        config.primaryColor ? 'custom' : (config.colorPreset as any),
         theme === 'dark',
-        config.customColors
+        palette
       );
     };
   }, [layout, theme]);
