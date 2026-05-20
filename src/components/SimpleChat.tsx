@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Progress } from '@/components/ui/progress';
+import { config } from '@/portfolio.config';
 import {
   webLLMService,
   type ChatMessage,
@@ -16,10 +17,12 @@ import {
 
 export function SimpleChat() {
   const MAX_CONVERSATION_PAIRS = 5; // Keep last 5 user/assistant exchanges
+  const greetingText = `Hi! I'm ${config.name}'s AI representative. Ask me anything about their experience, skills, or projects!`;
+  
   const [messages, setMessages] = React.useState<ChatMessage[]>([
     {
       role: 'assistant',
-      content: 'Hi! Ask me anything about GitVitae or this portfolio page.',
+      content: greetingText,
     },
   ]);
   const [input, setInput] = React.useState('');
@@ -36,7 +39,7 @@ export function SimpleChat() {
     setMessages([
       {
         role: 'assistant',
-        content: 'Hi! Ask me anything about GitVitae or this portfolio page.',
+        content: greetingText,
       },
     ]);
     messageCountRef.current = 0;
@@ -309,7 +312,7 @@ export function SimpleChat() {
                 ? 'AI unavailable...'
                 : webLLMStatus.status === 'loading'
                   ? 'Loading AI model...'
-                  : 'Write a message...'
+                  : `Ask about ${config.name}'s experience...`
             }
             value={input}
             onChange={(e) => setInput(e.target.value)}
